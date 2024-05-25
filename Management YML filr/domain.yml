@@ -1,0 +1,57 @@
+version: "3.1"
+
+
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - loved
+  - happy
+  - sad
+  - excited
+  - fear
+  - angry
+  - greatful
+  - namer
+  - deny
+
+slots:
+   human_name:
+     type: text
+     mappings:
+     - type: from_intent
+       intent: namer
+       value: true
+
+
+entities:
+  - username
+
+
+actions:
+  - action_hello
+  - action_goodbye
+  - action_affirm
+  - action_loved
+  - action_happy
+  - action_sad
+  - action_excited
+  - action_fear
+  - action_angry
+  - action_greatful
+  - action_namer
+
+
+
+
+responses:
+  utter_introduce:
+  - text: "Im FEELBOT, Im here to give you comapnay, lets go through your day together!"
+
+  utter_name:
+  - text: "May I please know your name to help you better."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
