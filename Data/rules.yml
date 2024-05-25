@@ -1,0 +1,67 @@
+version: "3.1"
+
+rules:
+
+#this is for the greeting
+- rule: say hello
+  steps:
+  - intent: greet
+  - action: action_hello
+  - action: utter_introduce 
+  - action: utter_name
+
+- rule: "whats you name"
+  steps:
+  - intent: namer 
+  - action: action_namer
+  
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: action_goodbye
+
+#this is for the emotion happy
+- rule: Say "I'm happy for today"
+  steps:
+  - intent: happy
+  - action: action_happy
+
+#this if for the emotion sad
+- rule: Say "this shouldnt happen to me "
+  steps:
+  - intent: sad
+  - action: action_sad
+
+#this if for the emotion angry
+- rule: Say "why is this happening "
+  steps:
+  - intent: angry
+  - action: action_angry
+
+#this if for the emotion greatful
+- rule: Say "thank you for this"
+  steps:
+  - intent: greatful
+  - action: action_greatful
+
+
+#this if for the emotion excited
+- rule: Say "lessgoo!!!!"
+  steps:
+  - intent: excited
+  - action: action_excited
+
+
+#this if for the emotion fear
+- rule: Say "I'm scared"
+  steps:
+  - intent: fear
+  - action: action_fear
+
+
+#this if for the emotion loved
+- rule: Say "I felt loved"
+  steps:
+  - intent: loved
+  - action: action_loved

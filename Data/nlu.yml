@@ -1,0 +1,211 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon 
+    - wassup
+    - how are you
+    - wazzup
+    - wad up 
+
+
+
+- intent: goodbye
+  examples: |
+    - see you
+    - goodbye
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - fuck off now !!
+
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: sad
+#done
+  examples: |
+    - my heart is heavy
+    - feeling down
+    - I feel blue
+    - life feels overwhelming
+    - utterly dejected
+    - completely crushed
+    - filled with sorrow
+    - in despair
+    - utterly devastated
+    - deeply melancholic
+    - utterly gloomy
+    - completely despondent
+    - in a state of misery
+    - profoundly disheartened
+    - utterly wretched
+
+- intent: angry
+#done 
+  examples: |
+    - boiling with rage
+    - seething with anger
+    - feeling infuriated
+    - consumed by wrath
+    - fuming with fury
+    - filled with rage
+    - completely livid
+    - absolutely incensed
+    - utterly enraged
+    - in a state of fury
+    - seething mad
+    - furious beyond words
+    - burning with anger
+    - enraged to the core
+    - wrathful to the extreme
+
+- intent: greatful
+#done
+  examples: |
+    - overflowing with gratitude
+    - deeply thankful
+    - feeling blessed
+    - overwhelmed with appreciation
+    - profoundly grateful
+    - filled with thankfulness
+    - genuinely appreciative
+    - deeply moved
+    - filled with joyous thanks
+    - heartily thankful
+    - truly indebted
+    - immensely grateful
+    - truly appreciative
+    - genuinely touched
+    - thoroughly thankful
+
+
+- intent: excited
+#done
+  examples: |
+    - bursting with excitement
+    - feeling thrilled
+    - overflowing with anticipation
+    - utterly ecstatic
+    - brimming with enthusiasm
+    - filled with exhilaration
+    - vibrating with excitement
+    - bubbling with anticipation
+    - absolutely thrilled
+    - electrified with excitement
+    - filled with anticipation
+    - utterly elated
+    - thrilled beyond measure
+    - gleaming with excitement
+    - wildly enthusiastic
+
+
+- intent: fear
+#done
+  examples: |
+    - trembling with fear
+    - feeling terrified
+    - paralyzed with fright
+    - consumed by dread
+    - filled with apprehension
+    - gripped by fear
+    - utterly petrified
+    - frozen with terror
+    - overcome by panic
+    - filled with dread
+    - quaking with fear
+    - terror-stricken
+    - utterly horrified
+    - panic-stricken
+    - deeply fearful
+    -
+
+
+- intent: loved
+#done
+  examples: |
+    - overflowing with love
+    - deeply cherished
+    - feeling adored
+    - wrapped in affection
+    - filled with love
+    - deeply beloved
+    - profoundly cherished
+    - treasured beyond measure
+    - completely adored
+    - showered with affection
+    - immensely loved
+    - deeply valued
+    - wholly cherished
+    - embraced with love
+    - enveloped in affection
+    - im loved 
+    - im feeling loved 
+
+- intent: happy
+#done
+  examples: |
+    - feeling joyful
+    - i'm feeling great
+    - brimming with happiness
+    - filled with delight
+    - absolutely ecstatic
+    - overwhelmed with joy
+    - beaming with happiness
+    - bubbling with joy
+    - filled with happiness
+    - exuding happiness
+    - radiant with joy
+    - utterly delighted
+    - blissfully happy
+    - gleaming with joy
+    - joyous beyond measure
+    - completely content
+    - im feeling elated
+    - im doing great 
+
+- intent: namer
+  examples: |
+    - my name is [trilochan](username)
+    - hey, I go by the name of [bippin](username)
+    - this is [ram](username)
+    - pleased to meet you,I'm [abdul](username)
+    - wassup, [ibrahim](username)
+    - let lord be with us, I'm [jacob](username)
+    - ram ram, [venkat](username) this side
+    - im good, they call me [rehka](username)
+    - great, I'm [rebeca](username)
+    - [billa](username)
+
+- intent: deny
+  examples: |
+    -NO
+    -fuck off
+    -this is not working
+    -please stop
+    -it's not you it is me, i have a problem
+    - i dont want to do it 

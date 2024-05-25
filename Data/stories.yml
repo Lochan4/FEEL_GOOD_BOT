@@ -1,0 +1,111 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: action_hello
+  - action: utter_introduce
+  - action: utter_name  
+  - intent: happy
+  - action: action_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: action_hello
+  - action: utter_introduce
+  - action: utter_name
+  - intent: namer
+  - action: action_namer 
+  - intent: sad
+  - action: action_sad
+  - intent: affirm
+  - action: action_affirm
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: action_hello
+  - action: utter_introduce
+  - action: utter_name
+  - intent: namer
+  - action: action_namer 
+  - intent: sad
+  - action: action_sad
+  - intent: deny
+  - action: action_goodbye
+
+- story: greatful path
+  steps:
+  - intent: greet
+  - action: action_hello
+  - action: utter_introduce
+  - action: utter_name
+  - intent: namer
+  - action: action_namer 
+  - intent: greatful
+  - action: action_greatful
+  - intent: affirm
+  - action: action_greatful
+
+
+- story: angry path
+  steps:
+  - intent: greet
+  - action: action_hello  
+  - action: utter_introduce
+  - action: utter_name
+  - intent: namer
+  - action: action_namer 
+  - intent: angry
+  - action: action_angry
+  - intent: affirm
+  - action: action_affirm
+
+
+
+- story: excited path 
+  steps:
+  - intent: greet
+  - action: action_hello
+  - action: utter_introduce
+  - action: utter_name
+  - intent: namer
+  - action: action_namer 
+  - intent: excited
+  - action: action_excited
+  - intent: affirm
+  - action: action_affirm
+
+
+
+- story: fear path
+  steps:
+  - intent: greet
+  - action: action_hello
+  - action: utter_introduce
+  - action: utter_name
+  - intent: namer
+  - action: action_namer 
+  - intent: fear
+  - action: action_fear
+  - intent: affirm
+  - action: action_affirm
+
+
+
+
+- story: loved path
+  steps:
+  - intent: greet
+  - action: action_hello
+  - action: utter_introduce
+  - action: utter_name
+  - intent: namer
+  - action: action_namer 
+  - intent: loved
+  - action: action_loved
+  - intent: affirm
+  - action: action_happy
