@@ -221,7 +221,7 @@ class Actionfear(Action):
     def run(self,dispatcher,tracker,domain):
 
 
-        #comments on excited
+        #comments on fear
         fe = ["Acknowledge your fear, but don't let it control your actions.","Take deep breaths to calm your mind and body when you feel afraid.","Remember that it's okay to feel scared; bravery is not the absence of fear, but the ability to act despite it.","Focus on the present moment rather than letting your mind dwell on fearful possibilities.","Challenge negative thoughts by questioning their validity and considering alternative perspectives.","Seek support from friends, family, or a therapist to help you navigate your fears.","Visualize a positive outcome and use it as motivation to confront your fears.","Practice self-compassion and remind yourself that it's natural to feel afraid at times.","Break down your fears into smaller, manageable steps and tackle them one at a time.","Use relaxation techniques such as meditation or progressive muscle relaxation to alleviate fear.","Distract yourself with activities you enjoy when fear threatens to overwhelm you.","Draw strength from past experiences where you've overcome fear and adversity.","Stay focused on your goals and remind yourself of the reasons why they're worth pursuing.","Challenge yourself to step outside your comfort zone and confront your fears head-on.","Remember that fear is a temporary emotion; it will pass with time and action."]
 
 
